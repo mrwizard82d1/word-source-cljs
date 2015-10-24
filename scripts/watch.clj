@@ -1,6 +1,7 @@
-(require '[cljs.build.api :as b])
+(require '[cljs.build.api])
 
-(b/watch "src"
-  {:main 'word-source.core
-   :output-to "out/word_source.js"
-   :output-dir "out"})
+(cljs.build.api/watch "src"
+                      {:main 'word-source.core
+                       :output-to "out/word_source.js"
+                       :output-dir "out"
+                       :target :nodejs})
