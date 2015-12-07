@@ -7,6 +7,7 @@
                       {:main 'word-source.core
                        :output-to "out/word_source.js"
                        :output-dir "out"
+                       :target :nodejs
                        :verbose true})
 
 ;; Invoke the node.js REPL.
